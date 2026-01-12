@@ -52,6 +52,23 @@ ENV FLASK_APP=app.py
 #Next, we will set the environment variable for Flask. The instruction is ENV, and the arguments are Flask app equals app.py.
 #This sets the Flask app environment variable to app.py, which is the name of the Flask application. 
 
+# Add labels to the image
+# LABEL Formatting Option 1
+LABEL "com.example.vendor"="Big Star Collectibles"
+LABEL version="1.0"
+LABEL description="The Big Star Collectibles Website \
+using the Python base image."
+
+# LABEL Formatting Option 2
+# LABEL "com.example.vendor"="Big Star Collectibles" version="1.0" description="The Big Star Collectibles Website \
+# using the Python base image."
+
+# LABEL Formatting Option 3
+# LABEL "com.example.vendor"="Big Star Collectibles" \
+# version="1.0" \
+# description="The Big Star Collectibles Website \
+# using the Python base image."
+
 #
 # Run the command to start the Flask application
 CMD ["flask", "run", "--host=0.0.0.0"]
