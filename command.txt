@@ -20,3 +20,19 @@ ENV FLASK_APP=app.py
 
 # Run the command to start the Flask application
 CMD ["flask", "run", "--host=0.0.0.0"]
+
+2.1 Building a Docker image from Dockerfile
+
+docker build [OPTIONS] PATH | URL | -
+
+docker build .
+
+docker build -f [dockerfile] .
+
+docker build --force-rm=true .
+
+docker build --rm=true .
+
+docker build --no-cache .
+
+docker build --help
