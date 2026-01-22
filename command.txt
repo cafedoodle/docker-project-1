@@ -103,3 +103,9 @@ This is especially useful for managing images in a repository, which we'll do ne
 https://hub.docker.com/
 
 docker login
+
+3.5 Inspecting images
+
+docker image ls
+
+docker image inspect IMAGE_ID
