@@ -36,3 +36,19 @@ docker build --rm=true .
 docker build --no-cache .
 
 docker build --help
+
+3 Pulling and Pushing Docker Images
+
+3.1 Searching for images in Docker Hub
+
+docker search python
+
+docker search --filter is-official=true python
+
+docker image pull python
+
+https://hub.docker.com/_/python
+
+docker image pull python:3.12-rc-bookworm
+
+docker image pull --help
