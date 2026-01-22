@@ -97,3 +97,9 @@ using the Python base image."
 
 Tagging and labeling images are crucial to keep your images organized.
 This is especially useful for managing images in a repository, which we'll do next.
+
+3.4 Working with a private image repository
+
+https://hub.docker.com/
+
+docker login
