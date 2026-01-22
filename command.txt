@@ -109,3 +109,15 @@ docker login
 docker image ls
 
 docker image inspect IMAGE_ID
+
+3.6 Removing images
+
+docker rmi IMAGE_ID
+
+C:\Users\bookl\Downloads\Lynda\docker-project-1>docker rmi a58f462c8e14
+Deleted: sha256:a58f462c8e14220fe01f899a85c4bdafec6f6709a0d21a249cca25c0f3d35a51
+
+C:\Users\bookl\Downloads\Lynda\docker-project-1>docker image ls
+REPOSITORY                       TAG                IMAGE ID       CREATED       SIZE
+python                           latest             76a545d97be5   9 days ago    1.12GB
+python                           3.12-rc-bookworm   09413d6829e4   2 years ago   1.02GB
