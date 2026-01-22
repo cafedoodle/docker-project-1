@@ -52,3 +52,15 @@ https://hub.docker.com/_/python
 docker image pull python:3.12-rc-bookworm
 
 docker image pull --help
+
+3.2 Working with custom images
+
+docker image ls [OPTIONS] [REPOSITORY[:TAG]]
+
+docker image ls --all
+
+docker image ls --no-trunc
+
+docker image ls --help
+
+https://docs.docker.com/engine/reference/commandline/image_ls/
