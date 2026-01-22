@@ -64,3 +64,36 @@ docker image ls --no-trunc
 docker image ls --help
 
 https://docs.docker.com/engine/reference/commandline/image_ls/
+
+
+3.3 Tagging and labeling images
+
+docker build -t SOURCE_IMAGE[:TAG] .
+
+Tags and labels are used to organize your Docker images.
+Tags are used to identify distinct versions of an image.
+It is common practice to use tags to mark each release so users can select between different versions.
+
+The industry standard is the version followed by the operating system or other key dependency.
+This helps to differentiate between versions when multiple versions of an image are available. 
+C:\Users\bookl\Downloads\Lynda\docker-project-1>docker image ls
+REPOSITORY                       TAG                IMAGE ID       CREATED       SIZE
+mcr.microsoft.com/mssql/server   2022-latest        c8ee7fc75b30   7 weeks ago   1.61GB
+python                           3.12-rc-bookworm   09413d6829e4   2 years ago   1.02GB
+
+
+Another way to keep your images organized is using the label instruction in your Docker file. This allows you to add metadata to an image using key value pairs.
+
+# Add labels to the image
+# LABEL Formatting Option 1
+LABEL "com.example.vendor"="Big Star Collectibles"
+LABEL version="1.0"
+LABEL description="The Big Star Collectibles Website \
+using the Python base image."
+
+# LABEL Formatting Option 2
+LABEL "com.example.vendor"="Big Star Collectibles" version="1.0" description="The Big Star Collectibles Website \
+using the Python base image."
+
+Tagging and labeling images are crucial to keep your images organized.
+This is especially useful for managing images in a repository, which we'll do next.
